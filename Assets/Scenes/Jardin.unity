@@ -207,7 +207,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526639336}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7, y: -0.66, z: 6.668372}
+  m_LocalPosition: {x: -0.592, y: -0.66, z: 6.668372}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2025857215}
@@ -286,9 +286,10 @@ GameObject:
   - component: {fileID: 567513729}
   - component: {fileID: 567513728}
   - component: {fileID: 567513727}
+  - component: {fileID: 567513731}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: sol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -370,6 +371,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &567513731
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567513726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 0.35411856, z: 10.019362}
+  m_Center: {x: 0, y: -0.17705928, z: -0.009681225}
 --- !u!1 &636108578
 GameObject:
   m_ObjectHideFlags: 0
