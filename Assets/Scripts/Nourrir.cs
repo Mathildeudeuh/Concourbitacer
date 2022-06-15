@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Arroser : MonoBehaviour
+public class Nourrir : MonoBehaviour
 {
     public GameObject objectToSpawn;
 
@@ -13,7 +13,7 @@ public class Arroser : MonoBehaviour
     public GameObject spawner7;
     public GameObject spawner8;
 
-    public void BoitPetitePlante()
+    public void MangePetitePlante()
     {
         Instantiate(objectToSpawn, spawner1.transform.position, spawner1.transform.rotation);
         Instantiate(objectToSpawn, spawner2.transform.position, spawner2.transform.rotation);
