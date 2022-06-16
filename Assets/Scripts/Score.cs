@@ -8,6 +8,8 @@ public class Score : MonoBehaviour
 
     public static Score instance;
 
+    //private Arroser arroser;
+
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI highscoreText;
 
@@ -31,7 +33,6 @@ public class Score : MonoBehaviour
     {
         score += 1;
         scoreText.text = "POINTS : " + score.ToString();
-
     }
 
 }

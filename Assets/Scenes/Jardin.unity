@@ -238,6 +238,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol
       objectReference: {fileID: 0}
+    - target: {fileID: 217729012469741288, guid: 7bd897b9e2ef04246982f0cf0962a550, type: 3}
+      propertyPath: m_TagString
+      value: sol
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bd897b9e2ef04246982f0cf0962a550, type: 3}
 --- !u!1 &409745637
@@ -480,6 +484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 4101688730573348862, guid: ffa413799f06b3c49a240eabbdae8533, type: 3}
+  scoreEau: 0
   spawner1: {fileID: 1336759972}
   spawner2: {fileID: 636108578}
   spawner3: {fileID: 57935657}
@@ -515,6 +520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 1921126617489391238, guid: 29e2ff8a7349f874491c0ca2102681c5, type: 3}
+  scoreEngrais: 0
   spawner1: {fileID: 1336759972}
   spawner2: {fileID: 636108578}
   spawner3: {fileID: 57935657}
