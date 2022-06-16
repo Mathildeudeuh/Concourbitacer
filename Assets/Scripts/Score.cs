@@ -23,14 +23,14 @@ public class Score : MonoBehaviour
 
     private void Start()
     {
-        scoreText.text = score.ToString() + "POINTS";
+        scoreText.text = "POINTS : " + score.ToString();
         highscoreText.text = "HIGHSCORE:" + highscore.ToString();
     }
 
     public void AddPoint()
     {
         score += 1;
-        scoreText.text = score.ToString() + "POINTS";
+        scoreText.text = "POINTS : " + score.ToString();
 
     }
 
