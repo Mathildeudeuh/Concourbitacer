@@ -3,6 +3,7 @@ using UnityEngine;
 public class Arroser : MonoBehaviour
 {
     public GameObject objectToSpawn;
+    public int scoreEau;
 
     public GameObject spawner1;
     public GameObject spawner2;
@@ -23,5 +24,11 @@ public class Arroser : MonoBehaviour
         Instantiate(objectToSpawn, spawner6.transform.position, spawner6.transform.rotation);
         Instantiate(objectToSpawn, spawner7.transform.position, spawner7.transform.rotation);
         Instantiate(objectToSpawn, spawner8.transform.position, spawner8.transform.rotation);
+
+        Score.instance.AddPoint();
+        Score.instance.SpawnPlante();
+
+        scoreEau += 1;
+
     }
 }

@@ -3,6 +3,8 @@ using UnityEngine;
 public class Nourrir : MonoBehaviour
 {
     public GameObject objectToSpawn;
+    public int scoreEngrais;
+
 
     public GameObject spawner1;
     public GameObject spawner2;
@@ -25,5 +27,9 @@ public class Nourrir : MonoBehaviour
         Instantiate(objectToSpawn, spawner8.transform.position, spawner8.transform.rotation);
 
         Score.instance.AddPoint();
+        Score.instance.SpawnPlante();
+
+
+        scoreEngrais += 1;
     }
 }

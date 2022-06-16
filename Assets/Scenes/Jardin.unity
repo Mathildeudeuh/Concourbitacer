@@ -238,6 +238,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sol
       objectReference: {fileID: 0}
+    - target: {fileID: 217729012469741288, guid: 7bd897b9e2ef04246982f0cf0962a550, type: 3}
+      propertyPath: m_TagString
+      value: sol
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bd897b9e2ef04246982f0cf0962a550, type: 3}
 --- !u!1 &409745637
@@ -292,6 +296,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 409745640}
   highscoreText: {fileID: 0}
+  spawner: {fileID: 1355673034}
+  plante: {fileID: 226574618616672320, guid: 358074353bb65a141b29f694e303dd1f, type: 3}
+  plante1: {fileID: 8718661692699041395, guid: 2196fcecd9bb3254db22dd0d0b718f71, type: 3}
 --- !u!114 &409745640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,6 +487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 4101688730573348862, guid: ffa413799f06b3c49a240eabbdae8533, type: 3}
+  scoreEau: 0
   spawner1: {fileID: 1336759972}
   spawner2: {fileID: 636108578}
   spawner3: {fileID: 57935657}
@@ -515,6 +523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 1921126617489391238, guid: 29e2ff8a7349f874491c0ca2102681c5, type: 3}
+  scoreEngrais: 0
   spawner1: {fileID: 1336759972}
   spawner2: {fileID: 636108578}
   spawner3: {fileID: 57935657}
@@ -1040,11 +1049,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1351702188}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1915b99f664fbc49a253124ff437f9e, type: 3}
+  m_Script: {fileID: 11500000, guid: 66a15005016bad0428dc58af33c9f6e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 1351702189}
-  highscoreText: {fileID: 0}
+  timer: {fileID: 1351702189}
+  time: 120
 --- !u!222 &1351702191
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1072,6 +1081,36 @@ RectTransform:
   m_AnchoredPosition: {x: -21.120117, y: -50}
   m_SizeDelta: {x: 351.75977, y: 54.56433}
   m_Pivot: {x: 1, y: 1}
+--- !u!1 &1355673034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1355673035}
+  m_Layer: 0
+  m_Name: Plante1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1355673035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355673034}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.111, z: 0.067}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1602611337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,8 +1544,6 @@ GameObject:
   - component: {fileID: 1972650994}
   - component: {fileID: 1972650993}
   - component: {fileID: 1972650992}
-  - component: {fileID: 1972650996}
-  - component: {fileID: 1972650997}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -1598,34 +1635,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1972650996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1972650991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1915b99f664fbc49a253124ff437f9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 409745640}
-  highscoreText: {fileID: 0}
---- !u!114 &1972650997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1972650991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66a15005016bad0428dc58af33c9f6e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: {fileID: 1351702189}
-  time: 120
 --- !u!1 &2025857214
 GameObject:
   m_ObjectHideFlags: 0
