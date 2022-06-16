@@ -23,5 +23,7 @@ public class Arroser : MonoBehaviour
         Instantiate(objectToSpawn, spawner6.transform.position, spawner6.transform.rotation);
         Instantiate(objectToSpawn, spawner7.transform.position, spawner7.transform.rotation);
         Instantiate(objectToSpawn, spawner8.transform.position, spawner8.transform.rotation);
+
+        Score.instance.AddPoint();
     }
 }
