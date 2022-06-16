@@ -43,11 +43,12 @@ public class Score : MonoBehaviour
         var pointEngrais = FindObjectOfType<Nourrir>();
         var pointEau = FindObjectOfType<Arroser>();
 
-        if (pointEngrais.scoreEngrais >= 10)
+        if (pointEngrais.scoreEngrais == 10)
         {
-            if (pointEau.scoreEau >= 10)
+            if (pointEau.scoreEau == 10)
             {
                 Instantiate(plante, spawner.transform.position, spawner.transform.rotation);
+                Debug.Log("oui");
             }
         }
 
@@ -60,10 +61,5 @@ public class Score : MonoBehaviour
             }
 
         }
-    }
-
-    private void Update()
-    {
-        SpawnPlante();
     }
 }
